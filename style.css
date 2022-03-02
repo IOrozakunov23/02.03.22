@@ -1,0 +1,33 @@
+.accordion {
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.accordion__header {
+  padding: 0.5rem 1rem;
+  background-color: rgb(254, 248, 240);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion__content {
+  border-top: 1px solid lightgray;
+  padding: 0.5rem 1rem;
+  display: none;
+}
+
+.accordion__open .accordion__content {
+  display: block;
+}
+
+.accordions .accordion:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+
+.accordions .accordion:not(:last-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
